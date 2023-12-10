@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link
+      rel="icon"
+      type="x-icon"
+      href="https://cdn.worldvectorlogo.com/logos/google-webdev-logo.svg"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a26a59d1c2.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2f1e7115880153.562983ac0e8a7.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .lst {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      margin: 0;
+      font-size: x-large;
+    }
+    .lst img {
+      width: 30px;
+    }
+    .lst a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: black;
+      padding: 0;
+    }
+    .lst a:hover {
+      color: lightgrey;
+      transition: 0.3s;
+    }
+   
+    .none {
+      display: flex;
+      align-items: center;
+      margin-top: 10%;
+      margin-left: 10%;
+    }
+    .none a {
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      box-shadow: 0  0 20px 10px rgba(0,0,0,0.05);
+      margin: 0 30px;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+    } 
+    .none a .fa-brands{
+      font-size: 40px;
+      line-height: 80px;
+      position: relative;
+      z-index: 10;
+      transition: color 0.5s;
+    }
+    .none a::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: -90px;
+      left: 0;
+      background: linear-gradient(-45deg, #ed1c94,#ffec17);
+      position: absolute;
+      transition: 0.5s;
+    }
+    .none a:hover::after{
+      top: 0;
+    }
+    .none a:hover .fa-brands{
+      color: white;
+    }
+    .text{
+      display: flex;
+      margin-left: 13%;
+      margin-top: 9%;
+      margin-bottom: -10%;
+      font-size: xx-large;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <div class="top">
+      <nav>
+        <div class="lst">
+          <a href="myown2.html"><img class="icon"
+            src="https://cdn.worldvectorlogo.com/logos/google-webdev-logo.svg"
+            alt="webdev">
+          <a href="myown2.html"><strong>Home</strong></a>
+          <a href="About.html"><strong>About</strong></a>
+          <a href="services.html"><strong>Services</strong></a>
+          <a href="Contacts.html"><strong>Contacts</strong></a>
+        </div>
+      </nav>
+    </div>
+    <div class="text">
+      <p>You can contact me using this!
+      </p>
+    </div>
+    <div class="none">  
+      <a href="https://www.facebook.com/godcaissa" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/_mackyyyyyyy/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/CASEINNITRATE0" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </body>
+</html>
